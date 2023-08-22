@@ -5,43 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="frontend,portfolio,html">
     <meta name="description" content="This page is part of my portfolio!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
     <title>Bakhyt portfolio</title>
 </head>
 <body>
-    <img src="https://i.gifer.com/75za.gif" alt="Calm down">
+    <div class="info">
+    <img src="https://i.gifer.com/75za.gif" alt="Calm down" class="avatar">
+
+    <div class="info-text">
     <h1>Hello, My name is Bakhyt Sembayev! </h1>
 
     <h2><p> I am junior <strong>  frontend-developer </strong></p></h2>
-    <p> I love <em>to travel around the world, active, adventureous and sport lifestyle, hi tech, innovations and <strong>creating new softwares and usefull products</strong> </em>  </p>
-<h2>List of my social links</h2>
-<a href="https://www.youtube.com/watch?v=WcIcVapfqXw" target="_blank">youtube</a> <br>
+    <p> <span class="color">I love <em>to travel around the world, active, <br>
+         adventureous and sport lifestyle, hi tech, <br>
+          innovations</span> and <strong>creating new softwares and usefull products</strong> </em>  </p>
+<h3>List of my social links</h3>
+<a href="https://www.youtube.com/shorts/tPDbpyYA5o0" target="_blank">youtube</a> <br>
 <a href="https://www.facebook.com/profile.php?id=100002032093182" target="_blank">facebook</a><br>
 <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%81%D0%BA,_%D0%98%D0%BB%D0%BE%D0%BD" target="_blank">google</a>
+</div>
+</div>
 
-<h3>My hobbies</h3>
-<ol type="I">
-    <li>hobbi 1</li>
-    <li>hobbi 2</li>
-    <li>hobbi 3</li>
-</ul>
+<div class="card bg bg-green" >
+    <h3>My hobbies</h3>
+
+    <ol class="list">
+        <li>hobbies 1</li>
+        <li>hobbies 2</li>
+        <li>hobbies 3</li>
+    </ul>
+</div>
+<div class="card bg-red">
 <h3> Work experience</h3>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Work</th>
-            <th>work experience</th>
-        </tr>
-    </thead>
+<table class="table">
+    
     <tbody>
         <tr>
             <td>exploiter1</td>
-            <td>the lost clerk</td>
+            <td> Lost clerk</td>
             <td>2009-2011</td>
         </tr>
     <tr>
         <td>exploiter2</td>
-        <td>office plankton</td>
+        <td>Office plankton</td>
         <td>2011-2020</td>
     </tr>
     <tr>
@@ -51,9 +58,18 @@
     </tr>
 </tbody>
 </table>
+</div>
+<div class="card bg-yellow">
+    <h3>My courses</h3>
+<ul class="link-list">
+    <li>
+        <a href="https://lk.result.school/pl/teach/control/lesson/view?id=267173460">Course frontend-developer</a>
+    </li>
+</ul>
+</div>
 <h1>Contact with me</h1>
 <br>
-<form action="/05_form.html">
+<form action="/05_form.html" class="bg-red">
 <div>
     <label for="name">Name:</label>
     <input type="text" id="Login" value="" placeholder="enter your Name">
@@ -68,11 +84,12 @@
 <div>
 <label for="message">message:</label>
 <br>
-<textarea id="message" cols="30" rows="9" placeholder="enter your message">
+<textarea id="message" cols="30" rows="9" placeholder="please, write your message">
 </textarea>
 </div>
 <br>
-<input type="submit" value="Send">
+<input class="btn" type="submit"
+ value="Send">
 </form>
 </body>
 </html>
